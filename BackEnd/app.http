@@ -1,0 +1,30 @@
+POST http://localhost:4000/register
+Content-Type: application/json
+
+{
+  "username": "rahul",
+  "email":"rahul@gmail.com",
+  "password": "rahul@123"
+}
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "rahul",
+  "password": "rahul@123"
+}
+
+###
+GET  http://localhost:4000/account
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsIiwiaWF0IjoxNjk3NjI4NDU1fQ.M1OwxM1cRSWpHujLcPYLW_TfxCoYXnC1M5LZMkw8JZ8
+
+###
+GET  http://localhost:4000/products?sort_by=PRICE_HIGH&category=O&rating=1&title_search=
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsIiwiaWF0IjoxNjk3NjI4NDU1fQ.M1OwxM1cRSWpHujLcPYLW_TfxCoYXnC1M5LZMkw8JZ8
+
+###
+
+GET  http://localhost:4000/shop/1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsIiwiaWF0IjoxNjk3NjI4NDU1fQ.M1OwxM1cRSWpHujLcPYLW_TfxCoYXnC1M5LZMkw8JZ8

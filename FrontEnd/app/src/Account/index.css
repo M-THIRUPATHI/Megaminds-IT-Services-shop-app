@@ -1,0 +1,69 @@
+.account-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 50px;
+  width: 90%;
+  max-width: 1110px;
+}
+
+@media screen and (min-width: 768px) {
+  .account-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.account-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .account-content {
+    align-items: flex-start;
+  }
+}
+
+.account-heading {
+  color: #1e293b;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .account-heading {
+    font-size: 50px;
+    text-align: left;
+  }
+}
+
+.account-description {
+  font-family: "Roboto";
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #64748b;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .account-description {
+    font-size: 18px;
+    margin-top: 0;
+    text-align: left;
+  }
+}
+.account-description-name {
+  font-weight: 700;
+}
+.account-description-email {
+  font-weight: 700;
+}
